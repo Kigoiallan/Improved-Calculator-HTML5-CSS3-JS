@@ -1,0 +1,97 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+    background:linear-gradient(to bottom right, cyan, darkcyan);
+    
+}
+
+video {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire element with the video */
+}
+
+#container{
+    text-align: center;
+    align-items: center;
+    width: 35%;
+    opacity: .9;
+    background-color: skyblue;
+    position: relative;
+    z-index: 1; /* Ensure content appears on top of the video */
+    padding: 20px;
+    border-radius: 10px;
+    min-width: min-content;
+    
+}
+
+header{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 800;
+}
+span{
+    color: hotpink;
+}
+
+input {
+    height: 5vh;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background,color 100ms ease-in-out;
+    width: 90%;
+    color: #000;
+    font-weight: 950;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+input:focus{
+    background-color: snow;
+    border: 1px solid darkcyan;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+button{
+    width: 30%;
+    margin: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: linear-gradient(to right, green, greenyellow );
+    font-weight: 900;
+    color: darkblue;
+    cursor: pointer;
+    transition: scale 100ms ease-in-out;
+}
+button:last-child {
+    background-color: #ee6243; 
+    width: 100%;
+}
+button:hover {
+    scale: 0.95; /* Change this to the color you want */
+}
+

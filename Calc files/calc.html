@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="calc.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <!-- Replace 'your-video.mp4' with the actual path to your video file -->
+      <source src="background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div id="container">
+      <header><span>Simp</span>le<br />Calculator</header>
+      <br />
+
+      <form>
+        <input
+          title="tpye your calculations"
+          type="text"
+          id="display"
+          name="display"
+          disabled
+        />
+      </form>
+      <br />
+
+      <div id="buttons">
+        <button type="button" onclick="appendToDisplay('1')">1</button>
+        <button type="button" onclick="appendToDisplay('2')">2</button>
+        <button type="button" onclick="appendToDisplay('3')">3</button>
+        <button type="button" onclick="appendToDisplay('4')">4</button>
+        <br />
+        <button type="button" onclick="appendToDisplay('5')">5</button>
+        <button type="button" onclick="appendToDisplay('6')">6</button>
+        <button type="button" onclick="appendToDisplay('7')">7</button>
+        <button type="button" onclick="appendToDisplay('8')">8</button>
+        <br />
+        <button type="button" onclick="appendToDisplay('9')">9</button>
+        <button type="button" onclick="appendToDisplay('/')">/</button>
+        <button type="button" onclick="appendToDisplay('0')">0</button>
+        <button type="button" onclick="appendToDisplay('*')">X</button>
+        <br />
+        <button type="button" onclick='appendToDisplay(")")'>)</button>
+        <button type="button" onclick="clearDisplay('')">C</button>
+        <br />
+        <button type="button" onclick="appendToDisplay('sqrt\(\)')">√</button>
+        <button type="button" onclick="appendToDisplay('**2')">x²</button>
+        <button type="button" onclick="appendToDisplay('**')">^</button>
+        <br />
+        <button type="button" onclick="appendToDisplay('sin(')">sin</button>
+        <button type="button" onclick="appendToDisplay('cos(')">cos</button>
+        <button type="button" onclick="appendToDisplay('tan(')">tan</button>
+        <br />
+        <button type="button" onclick="appendToDisplay('log(')">log</button>
+        <button type="button" onclick="appendToDisplay('ln(')">ln</button>
+        <button type="button" onclick="appendToDisplay('Math.PI')">π</button>
+        <button type="button" onclick="appendToDisplay('Math.E')">e</button>
+        <button type="button" onclick="appendToDisplay('factorial(')">
+          n!
+        </button>
+        <button type="button" onclick="calculateResults('')">=</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="calc.js"></script>
+  </body>
+</html>
